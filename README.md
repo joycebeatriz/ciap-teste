@@ -1,10 +1,18 @@
-# teste_ciap
+## Instalação
 
-Instalar bootstrap
+### Bootstrap
+
+Para instalar o Bootstrap, execute o seguinte comando:
+
+```bash
 npm install bootstrap
-
-Para usar os icones 
+```
+Ícones do Bootstrap
+Para usar os ícones do Bootstrap, instale a biblioteca bootstrap-icons:
+```
 npm install bootstrap-icons
-
+```
+### jQuery
+```
 npm install jquery
-yarn add jquery
+```
