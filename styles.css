@@ -104,7 +104,7 @@ input:focus {
 
 /* Ajuste a altura do carrossel conforme necessário */
 .carrossel .carousel-inner {
-    max-height: 1000px; /* Altura máxima do carrossel */
+    max-height: 900px; /* Altura máxima do carrossel */
 }
 
 /* Estilos para as imagens do carrossel */
@@ -171,7 +171,7 @@ input:focus {
 
 /* Estilos apenas para o título "Destaques" */
 .titulo-destaques {
-    color: #e30613; /* Cor do título em vermelho */
+    color: #1e6ad8; /* Cor do título em vermelho */
     font-size: 32px; /* Tamanho de fonte personalizado, ajuste conforme necessário */
 }
 
