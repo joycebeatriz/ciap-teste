@@ -20,7 +20,7 @@ nav {
 }
 
 .logo img {
-    height: 80px; /* Ajuste o tamanho do logotipo conforme necessário */
+    height: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
     margin-right: 20px; /* Adicione espaço à direita do logotipo */
 }
 
@@ -148,7 +148,7 @@ input:focus {
 
 /* Estilos para o botão "Leia Mais" da notícia em destaque */
 .noticia-destaque .btn {
-    background-color: #F20530; /* Cor de fundo vermelho */
+    background-color: #e30613; /* Cor de fundo vermelho */
     color: white; /* Cor do texto branco */
     text-decoration: none; /* Remover sublinhado */
     padding: 5px 10px; /* Espaçamento interno */
@@ -171,7 +171,7 @@ input:focus {
 
 /* Estilos apenas para o título "Destaques" */
 .titulo-destaques {
-    color: #F20530; /* Cor do título em vermelho */
+    color: #e30613; /* Cor do título em vermelho */
     font-size: 32px; /* Tamanho de fonte personalizado, ajuste conforme necessário */
 }
 
@@ -279,7 +279,7 @@ nav a {
 /* Estilos para links em hover (ao passar o mouse) */
 nav a:hover {
     color: #1e6ad8; /* Cor azul ao passar o mouse */
-    border-bottom: 2px solid #F20530; /* Adicionar um traço azul embaixo ao passar o mouse */
+    border-bottom: 2px solid #e30613; /* Adicionar um traço azul embaixo ao passar o mouse */
     text-decoration: none; /* Remover sublinhado padrão ao passar o mouse */
     border-radius: 0; /* Remover bordas arredondadas */
 }
