@@ -1,0 +1,337 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: white;
+    color: #1e6ad8; /* Cor azul: C 84 M 58 */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    /* Estilos para o menu ou outros elementos, por exemplo: */
+    
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+.logo img {
+    height: 80px; /* Ajuste o tamanho do logotipo conforme necessário */
+    margin-right: 20px; /* Adicione espaço à direita do logotipo */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #1e6ad8; /* Cor azul: C 84 M 58 */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para a barra de pesquisa */
+.search {
+    background-color: #1e6ad8; /* Cor de fundo azul */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Ocupar todo o espaço disponível */
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 40px; /* Posição à esquerda */
+    color: rgb(255, 255, 255); /* Cor do ícone branco */
+}
+
+.search input[type="text"] {
+    flex: 1; /* Ocupar todo o espaço disponível */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto branco */
+    margin-left: 25px; /* Espaçamento à esquerda para o ícone */
+}
+input:focus {
+    outline: none;
+  }
+
+/* Estilos para o texto de placeholder que desaparece */
+.search input[type="text"]::placeholder {
+    color: white; /* Cor do texto branco */
+}
+
+/* Estilos para ocultar o texto de placeholder quando algo é digitado */
+.search input[type="text"]:focus::placeholder {
+    opacity: 0; /* Torna o texto de placeholder transparente ao focar no input */
+}
+
+/* Estilos do botão de pesquisa */
+#search-button {
+    background-color: #1e6ad8; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Efeito de transição suave */
+    border: 1px solid transparent; /* Borda inicialmente transparente */
+}
+
+#search-button:hover {
+    background-color: #1e6ad8; /* Cor de fundo azul mais escura ao passar o mouse */
+    border-color: rgba(255, 255, 255, 0.2); /* Borda quase transparente ao passar o mouse */
+}
+
+#search-button:active {
+    background-color: #1e6ad8; /* Cor de fundo azul ao clicar */
+    color: white; /* Cor do texto branca ao clicar */
+    border-color: white; /* Borda branca ao clicar */
+}
+
+/* Estilos do carrossel */
+.carrossel {
+    max-width: 800%; /* Ocupará a largura total da página */
+    margin: 20px auto; /* Margem para centralizar o carrossel verticalmente */
+}
+
+/* Ajuste a altura do carrossel conforme necessário */
+.carrossel .carousel-inner {
+    max-height: 480px; /* Altura máxima do carrossel */
+}
+
+/* Estilos para as imagens do carrossel */
+.carrossel .carousel-inner img {
+    max-width: 100%; /* Imagens ocuparão a largura total do carrossel */
+    height: auto; /* Mantém a proporção da imagem */
+    background-size: cover;
+    margin-top: -175px; /* Ajuste a margem negativa para mover a imagem para cima */
+}
+/* Estilos para a seção de notícias em destaque */
+.highlight {
+    background-color: rgba(88, 129, 185, 0.2); /* Fundo azul claro quase transparente */
+    padding: 20px;
+    display: grid; /* Ativar o grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crie colunas flexíveis no grid */
+    gap: 20px; /* Espaçamento entre notícias em destaque */
+}
+
+/* Estilos para a notícia de destaque */
+.noticia-destaque {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    padding: 30px; /* Aumentar o espaço interno para o texto */
+    text-align: right; /* Alinhar o texto à direita */
+    border-radius: 10px;
+    max-width: calc(60% - 20px); /* Tamanho máximo de 60% com espaçamento interno */
+    box-sizing: border-box;
+    margin-right: 20px; /* Adicionar margem à direita para espaçamento */
+    float: left; /* Fazer a caixa flutuar à esquerda */
+    line-height: 1.5; /* Ajustar a altura da linha para um espaço mais livre */
+}
+
+/* Estilos para o título da notícia em destaque */
+.noticia-destaque h1 {
+    color: #1e6ad8; /* Cor do título em azul */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 20px; /* Tamanho de fonte personalizado, ajuste conforme necessário */
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow: hidden; /* Esconde o texto que não couber na largura disponível */
+    text-overflow: ellipsis; /* Mostra reticências (...) quando o texto estiver muito longo */
+}
+
+/* Estilos para o botão "Leia Mais" da notícia em destaque */
+.noticia-destaque .btn {
+    background-color: #F20530; /* Cor de fundo vermelho */
+    color: white; /* Cor do texto branco */
+    text-decoration: none; /* Remover sublinhado */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    display: inline-block;
+    margin-top: 10px; /* Espaçamento superior */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+}
+
+/* Estilos para o botão "Leia Mais" da notícia em destaque em hover (ao passar o mouse) */
+.noticia-destaque .btn:hover {
+    background-color: #1656A8; /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+/* Estilos para a imagem da notícia em destaque */
+.noticia-destaque img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100% */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos apenas para o título "Destaques" */
+.titulo-destaques {
+    color: #F20530; /* Cor do título em vermelho */
+    font-size: 32px; /* Tamanho de fonte personalizado, ajuste conforme necessário */
+}
+
+/* Estilos para o formulário de newsletter */
+.newsletter-form {
+    background-color: #f0f8ff; /* Fundo azul claro */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Alinhar itens na horizontal */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+/* Estilos para o campo de entrada de e-mail */
+.newsletter-form input[type="email"] {
+    border: none; /* Remover a borda */
+    border-bottom: 1px solid transparent; /* Remover a linha padrão */
+    padding: 5px;
+    border-radius: 5px;
+    width: 70%; /* Largura do campo de entrada */
+    transition: border-bottom 0.3s; /* Efeito de transição para a linha ao focar */
+}
+
+/* Estilos para o campo de entrada de e-mail ao focar */
+.newsletter-form input[type="email"]:focus {
+    border-bottom: 1px solid #1e6ad8; /* Linha azul ao focar */
+}
+
+/* Estilos para o botão da newsletter */
+.newsletter-form button {
+    background-color: #1e6ad8; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+}
+
+/* Estilos para o botão da newsletter em hover (ao passar o mouse) */
+.newsletter-form button:hover {
+    background-color: #1656A8; /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+/* Estilos para o título da newsletter */
+.newsletter-form h1 {
+    color: #1e6ad8; /* Cor do título em azul */
+    font-size: 32px; /* Tamanho de fonte personalizado */
+}
+
+/* Estilos para telas pequenas (móveis) */
+@media (max-width: 768px) {
+    /* Adicione estilos aqui */
+}
+
+/* Estilos para telas médias (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adicione estilos aqui */
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    /* Adicione estilos aqui */
+}
+
+
+/* Estilos para o ícone do menu */
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+/* Estilos para o menu responsivo quando exibido */
+.responsive-menu.active {
+    display: block;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 13px; /* Espaçamento entre os itens do menu */
+    margin: 0; /* Remova a margem padrão da lista */
+    padding: 0; /* Remova o preenchimento padrão da lista */
+    justify-content: flex-start; /* Alinhar à esquerda */
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e6ad8; /* Cor azul: C 84 M 58 */
+    font-size: 18px; /* Tamanho de texto adequado */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+}
+
+/* Estilos para links em hover (ao passar o mouse) */
+nav a:hover {
+    color: #1e6ad8; /* Cor azul ao passar o mouse */
+    border-bottom: 2px solid #F20530; /* Adicionar um traço azul embaixo ao passar o mouse */
+    text-decoration: none; /* Remover sublinhado padrão ao passar o mouse */
+    border-radius: 0; /* Remover bordas arredondadas */
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+/* Estilos para links do submenu em hover (ao passar o mouse) */
+nav ul ul li:hover {
+    color: white; /* Texto branco ao passar o mouse */
+    padding: 10px; /* Aumente o espaçamento ao passar o mouse */
+    font-size: 12px; /* Tamanho de fonte menor ao passar o mouse */
+    transition: padding 0.3s, font-size 0.3s; /* Adicione uma transição suave */
+}
+
+/* Estilos para links do submenu clicados */
+nav ul ul li.active {
+    background-color: #1e6ad8; /* Fundo azul quando clicado */
+    color: white; /* Texto branco quando clicado */
+    padding: 10px; /* Aumente o espaçamento quando clicado */
+    font-size: 12px;
+}
+
+/* Estilos do submenu e do dropdown */
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: none; /* Remova a borda ao redor do submenu */
+    min-width: 200px;
+    z-index: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
+    font-size: 12px;
+}
+
+nav ul ul li {
+    display: block;
+    padding: 5px 10px; /* Espaçamento interno menor */
+    color: #1e6ad8;
+    transition: background-color 0.4s, color 0.3s, padding 0.4s, font-weight 0.3s; /* Adicione transições suaves */
+}
+
+/* Estilos do submenu clicado */
+nav ul ul li.active:hover {
+    background-color: #1e6ad8; /* Mantenha o fundo azul ao passar o mouse */
+    color: white; /* Mantenha o texto branco ao passar o mouse */
+    padding: 5px 10px; /* Mantenha o espaçamento interno menor ao passar o mouse */
+}
+
+/* No seu arquivo estilos.css */
+.fonte-10 {
+    font-size: 16px;
+}
+
