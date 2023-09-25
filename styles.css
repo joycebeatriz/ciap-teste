@@ -175,53 +175,6 @@ input:focus {
     font-size: 32px; /* Tamanho de fonte personalizado, ajuste conforme necessário */
 }
 
-/* Estilos para o formulário de newsletter */
-.newsletter-form {
-    background-color: #f0f8ff; /* Fundo azul claro */
-    border-radius: 10px; /* Borda arredondada */
-    padding: 20px;
-    display: flex;
-    flex-direction: row; /* Alinhar itens na horizontal */
-    justify-content: space-between; /* Espaço entre os elementos */
-    align-items: center; /* Alinhar verticalmente */
-}
-
-/* Estilos para o campo de entrada de e-mail */
-.newsletter-form input[type="email"] {
-    border: none; /* Remover a borda */
-    border-bottom: 1px solid transparent; /* Remover a linha padrão */
-    padding: 5px;
-    border-radius: 5px;
-    width: 70%; /* Largura do campo de entrada */
-    transition: border-bottom 0.3s; /* Efeito de transição para a linha ao focar */
-}
-
-/* Estilos para o campo de entrada de e-mail ao focar */
-.newsletter-form input[type="email"]:focus {
-    border-bottom: 1px solid #1e6ad8; /* Linha azul ao focar */
-}
-
-/* Estilos para o botão da newsletter */
-.newsletter-form button {
-    background-color: #1e6ad8; /* Cor de fundo azul */
-    color: white; /* Cor do texto branco */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none;
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer;
-}
-
-/* Estilos para o botão da newsletter em hover (ao passar o mouse) */
-.newsletter-form button:hover {
-    background-color: #1656A8; /* Cor de fundo azul mais escura ao passar o mouse */
-}
-
-/* Estilos para o título da newsletter */
-.newsletter-form h1 {
-    color: #1e6ad8; /* Cor do título em azul */
-    font-size: 32px; /* Tamanho de fonte personalizado */
-}
-
 /* Estilos para telas pequenas (móveis) */
 @media (max-width: 768px) {
     /* Adicione estilos aqui */
@@ -333,5 +286,79 @@ nav ul ul li.active:hover {
 /* No seu arquivo estilos.css */
 .fonte-10 {
     font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para o contêiner da newsletter */
+.newsletter-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título da newsletter */
+.newsletter-container h1 {
+    color: #1e6ad8;
+    font-size: 32px;
+}
+
+/* Estilos para o parágrafo de descrição */
+.newsletter-container p {
+    color: #686969;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o formulário de newsletter */
+.newsletter-form {
+    display: flex;
+    flex-direction: row; /* Alinha itens na horizontal */
+    align-items: left;
+    justify-content: center;
+}
+
+/* Estilos para o campo de entrada de e-mail */
+.newsletter-form input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #1e6ad8;
+    padding: 10px; /* Altura do campo aumentada */
+    border-radius: 5px;
+    width: 400px; /* Largura aumentada */
+    margin-right: 10px; /* Espaçamento à direita do campo de e-mail */
+    transition: border-bottom 0.3s;
+}
+
+
+/* Estilos para o botão da newsletter */
+.newsletter-form button {
+    background-color: transparent; /* Botão transparente */
+    color: #1e6ad8; /* Cor do texto azul */
+    padding: 5px 10px; /* Padding menor para reduzir o tamanho */
+    border: 1px solid #1e6ad8; /* Borda fina azul */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Efeito de transição */
+    outline: none; /* Remove a borda preta ao clicar */
+}
+
+/* Estilos para o botão da newsletter ao passar o mouse */
+.newsletter-form button:hover,
+.newsletter-form button:focus {
+    background-color: #1e6ad8; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border-color: #1e6ad8; /* Cor da borda azul */
 }
 
