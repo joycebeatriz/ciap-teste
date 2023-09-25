@@ -98,13 +98,13 @@ input:focus {
 
 /* Estilos do carrossel */
 .carrossel {
-    max-width: 800%; /* Ocupará a largura total da página */
+    max-width: 100%; /* Ocupará a largura total da página */
     margin: 20px auto; /* Margem para centralizar o carrossel verticalmente */
 }
 
 /* Ajuste a altura do carrossel conforme necessário */
 .carrossel .carousel-inner {
-    max-height: 480px; /* Altura máxima do carrossel */
+    max-height: 1000px; /* Altura máxima do carrossel */
 }
 
 /* Estilos para as imagens do carrossel */
@@ -112,7 +112,7 @@ input:focus {
     max-width: 100%; /* Imagens ocuparão a largura total do carrossel */
     height: auto; /* Mantém a proporção da imagem */
     background-size: cover;
-    margin-top: -175px; /* Ajuste a margem negativa para mover a imagem para cima */
+    margin-top: -40px; /* Ajuste a margem negativa para mover a imagem para cima */
 }
 /* Estilos para a seção de notícias em destaque */
 .highlight {
