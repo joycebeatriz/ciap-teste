@@ -35,7 +35,7 @@
         </nav>
     </header>
 
-    <section class="search">
+    <!-- <section class="search">
         <div class="search-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -43,7 +43,7 @@
             <input type="text" id="search-input" placeholder="O que você procura?">
             <button id="search-button" class="btn btn-primary">Pesquisar</button>
         </div>
-    </section>
+    </section> -->
 
     <div id="search-results">
         <!-- Aqui serão exibidos os resultados da pesquisa -->
@@ -81,9 +81,7 @@
     <section class="highlight">
         <!-- Seção para a notícia em destaque -->
         <h1 class="titulo-destaques">Destaques</h1>
-        <div id="destaque-container" class="noticia-destaque">
-            <!-- O conteúdo da notícia em destaque será preenchido aqui -->
-        </div>
+        <p style="color: rgb(158, 158, 161); font-size: 16px; margin-left: -90px;">Conteúdo em breve!</p>
     </section>
 
     <section class="newsletter-container">
@@ -96,8 +94,7 @@
             </form>
         </div>
     </section>
-    
-    
+
     <iframe src="footer.html" frameborder="0" scrolling="no" width="100%" height="260"></iframe>
     
     <script src="script.js"></script>
@@ -105,65 +102,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-
-    <script>
-        // Simulação de dados das notícias
-        const noticias = [
-            {
-                imagem: "imagens/inteligencia-artificial.png",
-                titulo: "Lorem Ipsum",
-                descricao: "Descrição da notícia em destaque...",
-                link: "#"
-            }
-            // Adicione mais notícias aqui conforme necessário
-        ];
-
-        // Função para buscar os dados das notícias
-        async function buscarNoticias() {
-            try {
-                // Simule uma busca de dados aqui
-                // Neste exemplo, usamos dados fictícios definidos acima
-                const noticiasDestaque = noticias[0];
-                const noticiasIndividuais = noticias.slice(1, 4);
-
-                exibirNoticiaDestaque(noticiasDestaque);
-                exibirNoticiasIndividuais(noticiasIndividuais);
-            } catch (error) {
-                console.error('Erro ao buscar notícias:', error);
-            }
-        }
-
-        // Função para exibir a notícia em destaque na página
-        function exibirNoticiaDestaque(noticia) {
-            const destaqueContainer = document.getElementById('destaque-container');
-
-            const divNoticia = document.createElement('div');
-            divNoticia.classList.add('noticia-destaque');
-
-            const imagem = document.createElement('img');
-            imagem.src = noticia.imagem;
-            imagem.alt = 'Imagem da Notícia Destaque';
-            divNoticia.appendChild(imagem);
-
-            const titulo = document.createElement('h1');
-            titulo.textContent = noticia.titulo;
-            divNoticia.appendChild(titulo);
-
-            const descricao = document.createElement('p');
-            descricao.textContent = noticia.descricao;
-            divNoticia.appendChild(descricao);
-
-            const link = document.createElement('a');
-            link.href = noticia.link;
-            link.textContent = 'Leia Mais';
-            link.classList.add('btn');
-            divNoticia.appendChild(link);
-
-            destaqueContainer.appendChild(divNoticia);
-        }       
-        // Chama a função para buscar as notícias quando a página é carregada
-        window.addEventListener('load', buscarNoticias);
-    </script>
 
     <script>
         // JavaScript para tornar o menu responsivo
@@ -176,52 +114,5 @@
             });
         });
     </script>
-
-'    <script>
-        // Função para realizar a pesquisa
-        function search() {
-            const searchTerm = document.getElementById('search-input').value.toLowerCase();
-            const content = document.documentElement.innerHTML.toLowerCase();
-
-            if (content.includes(searchTerm)) {
-                // Se a palavra-chave for encontrada, exiba o resultado
-                document.getElementById('search-results').textContent = `Resultado da pesquisa: "${searchTerm}" encontrado.`;
-            } else {
-                // Caso contrário, exiba uma mensagem de não encontrado
-                document.getElementById('search-results').textContent = `Nenhum resultado encontrado para "${searchTerm}".`;
-            }
-        }
-
-        // Event listener para o botão de pesquisa
-        document.getElementById('search-button').addEventListener('click', search);
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('newsletter-form');
-            const emailInput = document.getElementById('email');
-            const mensagemEnviada = document.getElementById('mensagem-enviada');
-
-            form.addEventListener('submit', function (e) {
-                e.preventDefault(); // Impede o envio padrão do formulário
-
-                const email = emailInput.value;
-
-                // Exibe a mensagem de "enviado"
-                mensagemEnviada.style.display = 'block';
-
-                // Limpa o campo de entrada após o envio
-                emailInput.value = '';
-                
-                // Oculta a mensagem após alguns segundos (opcional)
-                setTimeout(() => {
-                    mensagemEnviada.style.display = 'none';
-                }, 5000); // A mensagem será ocultada após 5 segundos (ajuste conforme necessário)
-            });
-        });
-    </script>
-
-
-  
 </body>
 </html>

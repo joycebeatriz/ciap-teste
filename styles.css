@@ -20,7 +20,7 @@ nav {
 }
 
 .logo img {
-    height: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
+    height: 100px; /* Ajuste o tamanho do logotipo conforme necessário */
     margin-right: 20px; /* Adicione espaço à direita do logotipo */
 }
 
@@ -116,7 +116,7 @@ input:focus {
 }
 /* Estilos para a seção de notícias em destaque */
 .highlight {
-    background-color: rgba(88, 129, 185, 0.2); /* Fundo azul claro quase transparente */
+    background-color: rgba(189, 189, 189, 0.2); /* Fundo azul claro quase transparente */
     padding: 20px;
     display: grid; /* Ativar o grid */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crie colunas flexíveis no grid */
@@ -360,4 +360,25 @@ nav ul ul li.active:hover {
     color: white; /* Cor do texto branco */
     border-color: #1e6ad8; /* Cor da borda azul */
 }
+
+/* Estilo para ocultar a metade inferior da linha */
+.hr-divider::after {
+    content: "";
+    display: block;
+    width: 50%; /* A metade inferior será ocultada */
+    height: 1px; /* Espessura da linha */
+    background-color: white; /* Cor do fundo da página */
+    position: absolute;
+    bottom: 0;
+    right: 1;
+}
+
+/* Estilos para a linha cinza com gradiente */
+.hr-divider {
+    width: 100%; /* A linha se estende por toda a largura da página */
+    height: 1px; /* Espessura da linha */
+    background: linear-gradient(to left, transparent, #ccc, #ccc, transparent); /* Gradiente para começar fraco e ficar forte no centro */
+    position: relative;
+}
+
 
